@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Whatsapp</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				outline: none;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #0b1014;
+			}
+			main {
+				height: 90vh;
+				max-width: 900px;
+				min-width: 90%;
+				display: flex;
+			}
+			.left {
+				width: 320px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				background-color: #121b22;
+				border-right: 1px solid #232f38;
+			}
+			.top-nav {
+				display: flex;
+				padding: 10px;
+				background-color: #1f2c34;
+			}
+			.user-profile-picture {
+				border-radius: 100%;
+				width: 35px;
+				height: 35px;
+				background-size: cover;
+				background-position: center;
+			}
+			.search {
+				border-bottom: 1px solid #232f38;
+				padding: 10px;
+			}
+			.search > div {
+				display: flex;
+				border-radius: 5px;
+				background-color: #232f38;
+				overflow: hidden;
+			}
+			.search input {
+				background-color: transparent;
+				padding: 8px 10px;
+				flex-grow: 1;
+				border: none;
+			}
+			.search > div > div {
+				flex-basis: stretch;
+				background-color: #232f38;
+				width: 20px;
+				height: 10px;
+			}
+			.right {
+				flex-grow: 1;
+				position: relative;
+			}
+			.right > div.bg {
+				background-image: url("./images/whatsapp-background.png");
+				background-repeat: repeat;
+				/* background-position: center; */
+				position: absolute;
+				opacity: 0.3;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="left">
+				<div class="top-nav">
+					<div
+						class="user-profile-picture"
+						style="
+							background-image: url('https://pps.whatsapp.net/v/t61.24694-24/s96x96/202125544_367434358145692_1962264206858074834_n.jpg?ccb=11-4&oh=01_AVxm-4bYDuDu9n6j9J6bRPe6EnMLueli1vuhzO5GIkDp5w&oe=620F73EA');
+						"
+					></div>
+				</div>
+				<div class="search">
+					<div>
+						<div></div>
+						<input type="text" placeholder="search ..." />
+					</div>
+				</div>
+				<div class="recent-chats"></div>
+			</div>
+			<div class="right">
+				<div class="bg"></div>
+			</div>
+		</main>
+	</body>
+</html>
