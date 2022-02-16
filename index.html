@@ -89,23 +89,20 @@
 				padding: 8px 10px;
 				flex-grow: 1;
 				border: none;
+				color: #fff;
 			}
 			.search > div > div {
-				flex-basis: stretch;
-				background-color: #232f38;
-				width: 20px;
-				height: 10px;
-			}
-			.search_icon{
+				width: 30px;
+				height: 30px;
 				display: flex;
-				align-items: center;
 				justify-content: center;
+				align-items: center;
 			}
-			.search_icon > span{
+			.search_icon > div > span {
 				color: rgb(209, 202, 202);
-				font-size: 20px;
+				font-size: 10px;
 			}
-			
+
 			.right {
 				flex-grow: 1;
 				position: relative;
@@ -145,7 +142,7 @@
 				</div>
 				<div class="search">
 					<div class="search_icon">
-							<span class="fa-solid fa-search"></span>
+						<div><span class="fa-solid fa-search"></span></div>
 						<input type="text" placeholder="search ..." />
 					</div>
 				</div>
