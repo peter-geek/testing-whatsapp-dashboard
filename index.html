@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Whatsapp</title>
-		<script src="https://kit.fontawesome.com/c98faec581.js" crossorigin="anonymous"></script>
+		<link href="./fa/css/all.css" rel="stylesheet" />
 		<style>
 			* {
 				margin: 0;
@@ -45,22 +45,34 @@
 				background-size: cover;
 				background-position: center;
 			}
-			.icons {
-				margin-left: 20px;
-			/* background-color: #fff; */
-				width: 24px;
-				height: 24px;
-				border-radius: 100%;
-				margin-left: auto;
-				flex-grow: 0;
-				display: flex;	
-				justify-content: space-around;
+			.left-icons {
+				flex-grow: 1;
+				display: flex;
+				align-items: center;
 			}
-			.icons > span {
-				font-size: 14px;
-				margin: 9px 8px;
-				color: rgb(219, 211, 211);
-			
+			.left-icons > div:nth-child(1) {
+				margin-left: auto;
+			}
+			.left-icons > div {
+				width: 25px;
+				height: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 100%;
+				background: #454545;
+				margin-right: 5px;
+				cursor: pointer;
+				transition: 0.5s all;
+			}
+			.left-icons > div:hover {
+				transition: 0s;
+				transform: scale(1.5);
+				background-color: #f00;
+			}
+			.left-icons > div > * {
+				font-size: 12px;
+				color: #fff;
 			}
 			.search {
 				border-bottom: 1px solid #232f38;
@@ -109,18 +121,16 @@
 							background-image: url('https://pps.whatsapp.net/v/t61.24694-24/s96x96/202125544_367434358145692_1962264206858074834_n.jpg?ccb=11-4&oh=01_AVxm-4bYDuDu9n6j9J6bRPe6EnMLueli1vuhzO5GIkDp5w&oe=620F73EA');
 						"
 					></div>
-					<div class="icons">
-						<span class="fa-solid fa-bell-slash fa"></span>
-					</div>
-					<div class="icons">
-						<span class="">
-						</span>
-					</div>
-					<div class="icons">
-						<span class="fa-solid fa-message fa"></span>
-					</div>
-					<div class="icons">
-						<span class="fa-solid "></span>
+					<div class="left-icons">
+						<div>
+							<span class="fa-solid fa-bell-slash fa"></span>
+						</div>
+						<div>
+							<span class="fa-solid fa-message fa"></span>
+						</div>
+						<div>
+							<span class="fa-solid fa-ellipsis-vertical"></span>
+						</div>
 					</div>
 				</div>
 				<div class="search">
