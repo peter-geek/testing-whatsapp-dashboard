@@ -96,6 +96,16 @@
 				width: 20px;
 				height: 10px;
 			}
+			.search_icon{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.search_icon > span{
+				color: rgb(209, 202, 202);
+				font-size: 20px;
+			}
+			
 			.right {
 				flex-grow: 1;
 				position: relative;
@@ -134,8 +144,8 @@
 					</div>
 				</div>
 				<div class="search">
-					<div>
-						<div></div>
+					<div class="search_icon">
+							<span class="fa-solid fa-search"></span>
 						<input type="text" placeholder="search ..." />
 					</div>
 				</div>
