@@ -103,6 +103,45 @@
 				font-size: 10px;
 			}
 
+			.recent-chats{
+				display: flex;
+				flex-direction: column;
+
+			}
+			.my-chats{
+				display: flex;
+			flex-direction: column;
+				justify-content: center;
+				margin: 3px 0;
+				padding: 10px 4px;
+				border-bottom: 1px solid rgb(78, 77, 77);
+
+			}
+			.my-chats > .chats{
+				width: 35px;
+				height: 35px;
+				border-radius: 100px;
+				background-color: #fff;
+				display: flex;
+				justify-content: center;
+				justify-items: center;
+				
+			} 
+			.my-chats > .chats > div > span{
+				position: absolute;
+				display: flex;
+				left: 20%;
+				margin: 10px 0;
+				color: #fff;
+				font-size: 18px;
+			}
+			
+			.my-chats:hover{
+				background-color: #454545;
+			}
+
+			
+
 			.right {
 				flex-grow: 1;
 				position: relative;
@@ -146,8 +185,21 @@
 						<input type="text" placeholder="search ..." />
 					</div>
 				</div>
-				<div class="recent-chats"></div>
-			</div>
+				<div class="recent-chats">
+				<div class="my-chats">
+					<div class="chats">
+						<div><span>Ivan walker</span></div>
+						</div>
+					</div>
+					<div class="my-chats">
+						<div class="chats">
+					<div><span>Peter Geeks</span></div>
+					</div>
+						</div>
+						</div>
+						</div>
+						
+	 </div>
 			<div class="right">
 				<div class="bg"></div>
 			</div>
