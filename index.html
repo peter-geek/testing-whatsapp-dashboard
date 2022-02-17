@@ -18,6 +18,7 @@
 				align-items: center;
 				height: 100vh;
 				background-color: #0b1014;
+				font-family: Arial, Helvetica, sans-serif;
 			}
 			main {
 				height: 90vh;
@@ -106,42 +107,41 @@
 			.recent-chats{
 				display: flex;
 				flex-direction: column;
-
+				overflow-y: auto;
 			}
-			.my-chats{
+
+			.chat-list{
 				display: flex;
-			flex-direction: column;
-				justify-content: center;
-				margin: 3px 0;
-				padding: 10px 4px;
-				border-bottom: 1px solid rgb(78, 77, 77);
+				padding: 15px 0;
+				border-bottom: 1px solid #454545;
 
 			}
-			.my-chats > .chats{
+			.chat-list > .profile{
 				width: 35px;
 				height: 35px;
-				border-radius: 100px;
-				background-color: #fff;
+				background-color:#fff;
+				border-radius: 100%;
+				margin: 0 10px;
+				flex-grow: 0;
+			
+			}
+			.my-chats{
+				flex-grow: 1;
 				display: flex;
-				justify-content: center;
-				justify-items: center;
-				
-			} 
-			.my-chats > .chats > div > span{
-				position: absolute;
+				flex-direction: column;
+				padding: 10px 0;
+			}
+			.chats{
 				display: flex;
-				left: 14%;
-				margin: 10px 0;
+				align-items: center;
+			}
+			.chats > span{
 				color: #fff;
-				font-size: 18px;
 			}
-			
-			.my-chats:hover{
-				background-color: #454545;
+			.chat-list:hover{
+				background-color: #232f38;
 			}
-
-			
-
+		
 			.right {
 				flex-grow: 1;
 				position: relative;
@@ -186,19 +186,78 @@
 					</div>
 				</div>
 				<div class="recent-chats">
+				<div class="chat-list">
+					<div class="profile">
+
+					</div>
 				<div class="my-chats">
 					<div class="chats">
-						<div><span>Ivan walker</span></div>
+					<span>Ivan walker</span>
 						</div>
 					</div>
-					<div class="my-chats">
-						<div class="chats">
-					<div><span>Peter Geeks</span></div>
-					</div>
 						</div>
-						</div>
-						</div>
+						<div class="chat-list">
+							<div class="profile">
+		
+							</div>
+						<div class="my-chats" style="display: flex; flex-grow: 1;">
+							<div class="chats">
+							<span>Peter Geeks</span>
+								</div>
+							</div>
+								</div>
+								<div class="chat-list">
+									<div class="profile">
+				
+									</div>
+								<div class="my-chats">
+									<div class="chats">
+									<span>Julian</span>
+										</div>
+									</div>
+										</div>
+										<div class="chat-list">
+											<div class="profile">
 						
+											</div>
+										<div class="my-chats">
+											<div class="chats">
+											<span>Shaffic Millers</span>
+												</div>
+											</div>
+												</div>
+												<div class="chat-list">
+													<div class="profile">
+								
+													</div>
+												<div class="my-chats">
+													<div class="chats">
+													<span>Remote Dev</span>
+														</div>
+													</div>
+														</div>
+														<div class="chat-list">
+												<div class="profile">
+
+												</div>
+											<div class="my-chats">
+												<div class="chats">
+												<span>Josephine</span>
+													</div>
+												</div>
+													</div>
+													<div class="chat-list">
+														<div class="profile">
+									
+														</div>
+													<div class="my-chats">
+														<div class="chats">
+														<span>Ashraf</span>
+															</div>
+							</div>
+								</div>
+								</div>
+						</div>
 	 </div>
 			<div class="right">
 				<div class="bg"></div>
