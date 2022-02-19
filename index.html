@@ -193,26 +193,32 @@
 				/* display: flex; */
 				font-size: 15px;
 			}
+			.chat_footer {
+				width: 100%;
+			}
 			.chat_footer > .my-footer{
 				display: flex;
-				padding: 0 10px;
+				/* padding: 0 10px; */
+				align-items: center;
 			}
 			.chat_footer > .my-footer > span{
-				margin: 20px 10px;
+				margin: 10px;
 				font-size: 20px;
 				color: rgb(133, 130, 130);
+				display: inline-block;
 			}
 			.text_msg{
+				background-color: #293741;
 				flex-grow: 1;
+				overflow: hidden;
+				border-radius: 8px;
 			}
 			.text_msg > input[type=text]{
 				border: none;
-				background-color: #293741;
-				width: 100%;
-				height: 35px;
-				border-radius: 8px;
-				margin-top: 10px;
-				padding: 4px;
+			    width: 95%;
+				padding: 10px 2%;
+				background: transparent;
+				color: #ccc;
 			}
 			
 		</style>
@@ -308,7 +314,7 @@
 													</div>
 													<div class="chat-list">
 														<div class="profile">
-									
+								
 														</div>
 													<div class="my-chats">
 														<div class="chats">
@@ -343,11 +349,10 @@
 								<span class="fa-solid fa-paperclip"></span>
 								<div class="text_msg">
 									<input type="text" placeholder="Text a message">
-									</div>
-									<span class="fa-solid fa-microphone"></span>
+								</div>
+								<span class="fa-solid fa-microphone"></span> 
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
