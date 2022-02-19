@@ -176,6 +176,45 @@
 				padding: 10px;
 				background-color: #1f2c34;
 			}
+			.top-icons{
+				display: flex;
+				align-items: center;
+				flex-grow: 1;
+			}
+			.top-icons > span:nth-child(2){
+				margin-left: auto;
+			}
+			.top-icons > span{
+				color: rgb(218, 218, 218);
+				margin-right: 5px;	
+				padding: 0 8px;
+			}
+			.footer{
+				display: flex;
+				font-size: 15px;
+			}
+			.chat_footer > .my-footer{
+				display: flex;
+				padding: 0 10px;
+			}
+			.chat_footer > .my-footer > span{
+				margin: 20px 10px;
+				font-size: 20px;
+				color: rgb(133, 130, 130);
+			}
+			.my-footer > input[type=text]{
+				background-color: #293741;
+				border: none;
+				height: 35px;
+				border-radius: 8px;
+				width: 710px;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				margin-top: 10px;
+				padding: 4px;
+			}
+			
 		</style>
 	</head>
 	<body>
@@ -290,9 +329,25 @@
 								background-image: url('https://static.displate.com/280x392/displate/2020-06-05/387118e405b0b54ed69d56b5912474e9_6c8adc22233d9df8a2ee9dad72f86bd0.jpg');
 							"
 						></div>
+						<div class="top-icons">
+							<span>Remote Dev</span>
+							<span class="fa-solid fa-search"></span>
+							<span class="fa-solid fa-ellipsis"></span>
+						</div>
 					</div>
 					<div id="chat-display"></div>
-					<div></div>
+					<div class="footer">
+						<div class="chat_footer">
+							<div class="my-footer">
+								<span class="fa-solid fa-face-grin-beam"></span>
+								<span class="fa-solid fa-paperclip"></span>
+								
+									<input type="text" placeholder="Text a message">
+									<span class="fa-solid fa-microphone"></span>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</main>
