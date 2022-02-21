@@ -225,6 +225,7 @@
 	#chat-display {
 		display: flex;
 		flex-direction: column;
+		overflow-y: auto;
 	}
 	.message-bubble {
 		flex-shrink: 1;
@@ -241,6 +242,44 @@
 	.message-bubble sub {
 		color: #626262;
 	}
+	.replied-message{
+		display:flex;
+		flex-shrink: 1;
+	}
+	.replied-message > div{
+		background-color: #1f2c34;
+		color:#fff;
+		margin: 20px ;
+		font-size: 12px;
+		padding: 10px 10px;
+		border-radius: 8px;
+		margin-left: auto;
+		margin-right: 10px;
+		
+	}
+	.replied-message > div > p > sub{
+		color: #626262;
+	}
+	.received-message{
+		display: flex;
+		flex-shrink: 1;
+	}
+	.received-message > div{
+		margin: 7px;
+		background-color: #1f2c34;
+		padding: 10px 10px;
+		color: #fff;
+		border-radius: 8px;
+		font-size: 12px;
+	}
+	.received-message sub{
+		color: #626262;
+	}
+	.received-message > div > img{
+		width: 200px;
+		height: 200px;
+	}
+
 </style>
 </head>
 <body>
@@ -370,6 +409,125 @@
 						</p>
 					</div>
 				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+							Yes how are you
+							<sub>10:11 PM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="received-message">
+					<div>
+						<p>Am good, how is everything that side
+						<sub>10:50 </sub>
+						</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>Everything is fine still fighting with programming,
+							but so far now things they are somehow easy.
+							<sub>11:06 PM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+							but i will keep it up fighting with it bcoz what i really
+							whant is to become a professional programmer oba software developer.
+							Insha-Allah
+							<sub>11:07 PM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="received-message">
+					<div>
+						<p>
+							Aaaa wowww it sounds good, you will do it just 
+							keep practing..the more you <br> practice the more you increase on your 
+							skills. so don't giveup, just be patient.
+							<sub>11:15 PM</sub>
+						</p>
+					</div>
+					</div>
+					<div class="replied-message">
+						<div>
+							<p>By the way you can also create like 
+								android applications etc.... <br>
+								You know oba it was 2018 i promised some one a favor <br>
+								mbu one day i will create android application
+								<sub>11:29 PM</sub>
+							</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+							but i found it when it was not easy and rember the favor was  <br>
+							to make it was with in 2019 oba 2020. I found things is not
+							easy as i expected. but if others can do, which means me <br>
+							too 1day i will do it.
+							<sub>11:39 PM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="received-message">
+					<div>
+						<img src="./The-7-Most-In-Demand-Programming-Languages-of-2019-Inner-2.png" alt="">
+						<p>
+							Take a look on that picture there is alot of programming <br>
+							languages so you have to be knowing atleast 4lang <br>
+							languages including java & javascript......
+							<sub>12:00 AM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+						Ohhhhh my Godness &#9785;🤦‍♀️🤦‍♀️😢 
+						<sub>12:01 AM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+							But do you think i can do it 
+							<sub>12:02 AM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="received-message">
+					<div>
+						<p>
+							Ovcouse why not Just give it time <br>
+							slowly slowly but sure you will see nga every
+							thing is becoming true.
+							<sub>12:08 AM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="replied-message">
+					<div>
+						<p>
+							Okay bro thank you for your advise, i appreciate 
+							<sub>12:13 AM</sub>
+						</p>
+					</div>
+				</div>
+				<div class="received-message">
+					<div>
+						<p>
+							Okay Ivan my pleasure
+							<sub>12:19 AM</sub>
+						</p>
+					</div>
+				</div>
+				</div>
+				<div class=""></div>
 			</div>
 			<div class="footer">
 				<div class="chat_footer">
